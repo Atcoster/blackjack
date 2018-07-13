@@ -1,0 +1,39 @@
+@import '../../../assets/scss/abstracts/variables/colors';
+
+.control {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+
+  &__btn {
+    padding: 10px 15px;
+    border: none;
+    color: $white;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 300ms ease-in-out;
+    border-radius: 5px;
+    flex: 1;
+    outline: none;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &--green {
+      background-color: $green;
+    }
+
+    &--red {
+      background-color: $red;
+    }
+
+    &--inactive {
+      background-color: $gray--light;
+    }
+
+    &:hover {
+      filter: brightness(120%);
+    }
+  }
+}

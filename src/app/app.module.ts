@@ -5,16 +5,22 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { DecksComponent } from './decks/decks.component';
-import { SumArrayPipe } from './sum-array.pipe';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { TableComponent } from './components/table/table.component';
+import { PlayerComponent } from './components/player/player.component';
+import { ScoreboardComponent } from './components/scoreboard/scoreboard.component';
+import { ControlComponent } from './components/control/control.component';
+import { HandComponent } from './components/hand/hand.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    DecksComponent,
-    SumArrayPipe
+    TableComponent,
+    PlayerComponent,
+    ScoreboardComponent,
+    ControlComponent,
+    HandComponent
   ],
   imports: [
     BrowserModule,

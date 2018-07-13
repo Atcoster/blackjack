@@ -1,0 +1,6 @@
+<ul class="hand" *ngIf="cardsLoaded">
+  <span class="hand__total">{{total}}</span>
+  <li class="hand__item" *ngFor="let card of player.Cards">
+    <img class="hand__card" src="{{card.image}}" alt="{{ total === '??' ? 'card' : card.code}}">
+  </li>
+</ul>

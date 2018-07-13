@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
+	color: $gray--dark;
+	overflow: hidden;
+	scroll-behavior: auto;
+	font-size: 16px;
+  line-height: 18px;
+  width: $screen--width;
+  height: $screen--height;
+}
+
+ul {
+	list-style-type: none;
+}
+
+strong {
+	font-weight: 700;
+}

@@ -1,0 +1,29 @@
+@import '../../../assets/scss/abstracts/variables/colors';
+
+.player {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45%;
+
+  &__divider {
+    border-bottom: 4px solid $gray--dark;
+  }
+
+  &__role {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: $gray--dark;
+    color: $white;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    transform: translateY(-50%);
+  }
+
+  img {
+    width: 100%;
+  }
+}

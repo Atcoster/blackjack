@@ -1,0 +1,30 @@
+@import '../../../assets/scss/abstracts/variables/colors';
+
+.hand {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__total {
+    position: absolute;
+    font-size: 1.2em;
+    background-color: $gray--med;
+    border-radius: 50%;
+    border: 1px solid $gray--med;
+    padding: 10px;
+    top: -40px;
+    color: $white;
+  }
+
+  &__item {
+    padding: 5px;
+  }
+
+  &__card {
+    width: 20vw;
+    height: 27vw;
+    max-width: 190px;
+    max-height: 250px;
+  }
+}
