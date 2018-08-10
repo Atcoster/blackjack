@@ -1,6 +1,12 @@
-<ul class="hand" *ngIf="cardsLoaded">
-  <span class="hand__total">{{total}}</span>
-  <li class="hand__item" *ngFor="let card of player.Cards">
-    <img class="hand__card" src="{{card.image}}" alt="{{ total === '??' ? 'card' : card.code}}">
-  </li>
-</ul>
+<div class="hand">
+  <span class="hand__total">
+    {{ player.playing ? player.total: player.type === 'dealer' ? '??' : player.total }}
+  </span>
+  <ul class="hand__list">
+    <li class="hand__item" *ngFor="let card of player.cards; let i = index" [ngStyle]="{'grid-column': 'i + 1'}">
+      <img class="hand__card" 
+        src="{{!player.playing && player.type === 'dealer' && i == 0 ? '../../assets/images/cardback.png' : card.image}}" 
+        alt="{{!player.playing && player.type === 'dealer' && i == 0 ? 'card' : card.code}}">
+    </li>
+  </ul>
+</div>

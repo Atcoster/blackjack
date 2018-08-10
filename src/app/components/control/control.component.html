@@ -1,4 +1,4 @@
-<div class="control">
-  <button class="control__btn control__btn--green">HIT</button>
-  <button class="control__btn control__btn--red">STAND</button>
+<div class="control" *ngIf="player.playing && player.type === 'player'">
+  <button class="control__btn control__btn--green" (click)="onHit($event)">HIT</button>
+  <button class="control__btn control__btn--red" (click)="onStay($event)">STAY</button>
 </div>

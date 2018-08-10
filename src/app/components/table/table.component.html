@@ -1,7 +1,8 @@
-<div class="table" *ngIf="deckLoaded">
-  <app-player 
+<div class="table" *ngIf="tableReady">
+  <app-scoreboard></app-scoreboard>
+  <app-modals></app-modals>
+  <app-player
     *ngFor="let player of players"
-    [player]="player"
-    [deck]="deck"
-  ></app-player>
+    [player]="player">
+  </app-player>
 </div>

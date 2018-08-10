@@ -1,0 +1,9 @@
+  <div class="modal" *ngIf="status === 'OVER'">
+    <div class="modal__content">
+      <h2 class="modal__text">{{msg}}</h2>
+      <div class="modal__buttons">
+        <button class="modal__btn modal__btn--green" (click)="onHit($event)">Next Round</button>
+        <button class="modal__btn modal__btn--red" (click)="onStay($event)">Close</button>
+      </div>
+    </div>
+  </div>

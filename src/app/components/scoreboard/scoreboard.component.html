@@ -1,4 +1,6 @@
 <div class="score-board">
-  <span class="round">Round: 0</span>
-  <span class="score">Win: 0 | Lost: 0 | Draw: 0 </span>
+  <span class="round">Round{{scoreBoard.rounds > 1 ? 's' : ''}}: {{scoreBoard.rounds}}</span>
+  <span class="round">Win{{scoreBoard.wins > 1 ? 's' : ''}}: {{scoreBoard.wins}}</span>
+  <span class="round">Lost{{scoreBoard.losses > 1 ? 's' : ''}}: {{scoreBoard.losses}}</span>
+  <span class="round">Draw{{scoreBoard.draws > 1 ? 's' : ''}}: {{scoreBoard.draws}}</span>
 </div>

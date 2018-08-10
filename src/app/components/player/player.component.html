@@ -1,8 +1,7 @@
 <div [ngClass]="[player.type === 'player' ? 'player' : 'player player__divider']" *ngIf="handLoaded; else loading">
   <h2 class="player__role">{{player.name}}</h2>
-  <!-- <app-hand [cards]="player.cards" [dealer]="player.type === 'dealer'"></app-hand> -->
   <app-hand [player]="player"></app-hand>
-  <app-control *ngIf="player.type === 'player'"></app-control>
+  <app-control *ngIf="player.type === 'player'" [player]="player"></app-control>
 </div>
 
 <ng-template #loading>

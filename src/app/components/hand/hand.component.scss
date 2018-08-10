@@ -1,10 +1,10 @@
 @import '../../../assets/scss/abstracts/variables/colors';
 
 .hand {
-  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  position: relative;
+  width: 100%;
 
   &__total {
     position: absolute;
@@ -13,12 +13,17 @@
     border-radius: 50%;
     border: 1px solid $gray--med;
     padding: 10px;
-    top: -40px;
+    top: -45px;
     color: $white;
+    z-index: 99;
+  }
+
+  &__list {
+    display: flex;
   }
 
   &__item {
-    padding: 5px;
+    padding: 1px;
   }
 
   &__card {

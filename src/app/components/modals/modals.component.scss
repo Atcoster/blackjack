@@ -1,0 +1,51 @@
+@import '../../../assets/scss/abstracts/variables/colors';
+@import '../../../assets/scss/abstracts/variables/dimensions';
+
+.modal {
+  display: flex;
+  position: absolute;
+  height: $screen--height;
+  width: $screen--width;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 99;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    padding: 10px;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 3em;
+    color: $white;
+    margin-bottom: 25px;
+  }
+
+  &__btn {
+    padding: 10px 15px;
+    border: none;
+    color: $white;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 300ms ease-in-out;
+    border-radius: 5px;
+    outline: none;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &--green {
+      background-color: $green;
+    }
+
+    &--red {
+      background-color: $red;
+    }
+
+    &:hover {
+      filter: brightness(120%);
+    }
+  }
+}
